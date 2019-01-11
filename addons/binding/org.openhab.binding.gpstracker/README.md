@@ -166,6 +166,8 @@ Switch atHomeEX "Home presence" {channel="gpstracker:tracker:EX:regionTrigger" [
 
 //another switch for work region. assuming the OTWork is defined in OwnTracks application (no distance channel is needed like for Home)
 Switch atWorkEX "Work presence" {channel="gpstracker:tracker:EX:regionTrigger" [profile="gpstracker:trigger-geofence", regionName="OTWork"]}
+
+Number distanceEX "Distance From Home" {channel="gpstracker:tracker:EX:homeDistance"}
 ```
 
 ### Sitemaps
